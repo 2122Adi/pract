@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+  namespace: mysql
+  labels:
+    app: mysql
+data:
+  MYSQL_DATABASE: "devops"
+  # MYSQL_HOST: "mysql-service" # Name of your MySQL service
